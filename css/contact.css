@@ -1,0 +1,82 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact__container{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__info{
+    padding: 0 3em;
+}
+
+.contact__info-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.contact-icon{
+    font-size: 2rem;
+    color: var(--principal-color);
+    padding: 0.5em;
+}
+
+.contact__info-item-description{
+    line-height: 1.8rem;
+}
+
+.info__heading{
+    font-size: 22px;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+
+
+/* ------------------------------------------------------ */
+.contact__form{
+    padding: 0 3em 0 0;
+    width: 45vw;
+}
+
+.form__content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1em;
+}
+
+.contact__input{
+    padding: 1.5em 0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.247);
+    outline: 0;
+    text-indent: 30px;
+}
+
+.contact__textarea{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.form__buttons{
+    width: 10em;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5em;
+    color: white;
+    background-color: var(--principal-color);
+    border: none;
+    border-radius: 20px;
+    box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.377);
+}
+
+.form__buttons:active{
+    background-color: var(--tertiary-color);
+}

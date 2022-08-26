@@ -5,20 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="reset.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
     <link rel="stylesheet" href="style.css">
- 
-    <script defer src="js/main.js"></script>
 
     <title>Portfolio Davi Hasson Castro</title>
 </head>
 
 <body>
-    <a href="#home"><button class="to-top__button visible"><i class="fa-solid fa-angle-up"></i></button></a>
+    <a href="#home"><button class="to-top__button"><i class="fa-solid fa-angle-up"></i></button></a>
     <header class="first__header">
             <nav class="nav__menu">
                 <div>
@@ -49,7 +45,7 @@
                     <div class="info__buttons">
                         <button class="info__contact">Contact Me<img src="images/send.png" class="info__image"></button>
                     </div>
-                    <a href="#about-me"><button class="scroll-down__button"><img src="images/computer-mouse.png" class="scroll-down__image" id="scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
+                    <a href="#about-me"><button class="scroll-down__button"><img src="images/computer-mouse.png" class="scroll-down__image scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
                 </div>
                 <div class="profile__image">
                     <img src="images/profile.png" class="container__image-firstprofile" alt="Davi's picture">
@@ -57,10 +53,10 @@
         </section>
     
         <section class="about" id="about-me">
-            <div class="about__content">
+            <div class="content">
                 <div class="about__top">
-                    <h1 class="about__title">About Me</h1>
-                    <h2 class="about__subheading">My introduction</h2>
+                    <h1 class="top__heading">About Me</h1>
+                    <h2 class="top__subheading">My introduction</h2>
                 </div>
                 <div class="container">
                     <div class="container__secundaryimage">
@@ -89,17 +85,17 @@
                     </div>
                     <div class="container__buttons">
                         <button class="container__cv">Download Curriculum<img src="images/downloadCv.png" class="cv__image"></button>
-                        <a href="#skills"><button class="scroll__down__button"><img src="images/computer-mouse.png" class="scroll-down__image" id="scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
+                        <a href="#skills"><button class="scroll__down__button"><img src="images/computer-mouse.png" class="scroll-down__image scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="skills" id="skills">
-            <div class="skills__content">
+            <div class="content">
                 <div class="skills__top">
-                    <h1 class="skills__heading">Skills</h1>
-                    <h2 class="skills__subheading">My technical level</h2>
+                    <h1 class="top__heading">Skills</h1>
+                    <h2 class="top__subheading">My technical level</h2>
                 </div>
                 <div class="skills__items">
                     <div class="items__frontend">
@@ -171,53 +167,132 @@
                         </div>
                     </div>
                 </div>
+                <a href="#projects"><button class="scroll__down__button"><img src="images/computer-mouse.png" class="scroll-down__image scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
             </div>
         </section>
 
         <section class="projects" id="projects">
-            <div class="projects__content">
+            <div class="content">
                 <div class="projects__top">
-                    <h1 class="projects__heading">Projects</h1>
-                    <h2 class="projects__subheading">My personal projects</h2>
+                    <h1 class="top__heading">Projects</h1>
+                    <h2 class="top__subheading">My personal projects</h2>
                 </div>
-                <div class="swiper">
+                <div class="projects__container swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/secretNumber.png" alt="Picture of the project">
-                            <div>
-                                <h1>Secret Number</h1>
-                                <p>Project made in Alura's course, initially using HTML, CSS and JavaScript. The project working with SpeechRecognition API.</p>
-                                <a href="" target="_blank" rel="external">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    <!-- ============================= PROJECT 1 ================================== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="images/secretNumber.png" alt="Picture of the project" class="projects__image">
+                            <div class="projects__data">
+                                <h3 class="projects__heading">Secret Number</h3>
+                                <p class="projects__description">Project made in Alura's course, initially using HTML, CSS and JavaScript. The project working with SpeechRecognition API.</p>
+                                <div class="button">
+                                    <a class="projects__link" target="_blank" href="https://dv-script.github.io/secret-number/">
+                                        Demo <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/aluraBooks.png" alt="Picture of the project">
-                            <div>
-                                <h1>Alura Books</h1>
-                                <p>Responsive website made in Alura's course, initially using only HTML and CSS in its structure. The project is basically a front page of a book's catalog website.</p>
-                                <a href="" target="_blank" rel="external">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    <!-- ============================= PROJECT 2 ================================== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="images/aluraBooks.png" alt="Picture of the project" class="projects__image">
+                            <div class="projects__data">
+                                <h3 class="projects__heading">Alura Books</h3>
+                                <p class="projects__description">Responsive website made in Alura's course, initially using only HTML and CSS in its structure. The project is basically a front page of a book's catalog website.</p>
+                                <div class="button">
+                                    <a class="projects__link" target="_blank" href="https://dv-script.github.io/alura-books/">
+                                        Demo <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="images/pokedex.png" alt="Picture of the project">
-                            <div>
-                                <h1>Pokedex</h1>
-                                <p>Basic project that I write in HTML, CSS and JavaScript in its structure that implements the PokeAPI</p>
-                                <a href="" target="_blank" rel="external">Demo <i class="fa-solid fa-arrow-right"></i></i></a>
+                    <!-- ============================= PROJECT 3 ================================== -->
+                        <div class="projects__content swiper-slide">
+                            <img src="images/pokedex.png" alt="Picture of the project" class="projects__image">
+                            <div class="projects__data">
+                                <h3 class="projects__heading">Pokedéx</h3>
+                                <p class="projects__description">Basic project that I write in HTML, CSS and JavaScript in its structure that implements the PokeAPI.</p>
+                                <div class="button">
+                                    <a class="projects__link" target="_blank" href="https://dv-script.github.io/pokedex/">
+                                        Demo <i class="fa-solid fa-arrow-right button-icon"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- -- Add Arrows -- -->
+                    <div class="swiper-button-next">
+                        <i class="fa-solid fa-angle-right swiper-projects-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fa-solid fa-angle-left swiper-projects-icon"></i>
+                    </div>
+                    <!-- -- Add Pagination -- -->
                     <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
                 </div>
+                <a href="#contact"><button class="scroll__down__button" id="projects-scroll__down__buton"><img src="images/computer-mouse.png" class="scroll-down__image scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="content">
+                <div class="contact__top">
+                    <h1 class="top__heading">Contact Me</h1>
+                    <h2 class="top__subheading">Get in touch</h2>
+                </div>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <div class="contact__info-item-description">
+                                <h2 class="info__heading">Call me</h2>
+                                <p class="info__description">+55 (21) 96782-2001</p>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="fa-regular fa-envelope contact-icon"></i>
+                            <div class="contact__info-item-description">
+                                <h2 class="info__heading">Email</h2>
+                                <p class="info__description">davihasson@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="fa-solid fa-location-dot contact-icon"></i>
+                            <div class="contact__info-item-description">
+                                <h2 class="info__heading">Location</h2>
+                                <p class="info__description">+55 (21) 96782-2001</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <div class="form__content">
+                            <label for="" class="contact__label"></label>
+                            <input type="text" class="contact__input" placeholder="Name" required>
+                        </div>
+                        <div class="form__content">
+                            <label for="" class="contact__label"></label>
+                            <input type="email" class="contact__input" placeholder="Email" required>
+                        </div>
+                        <div class="form__content">
+                            <label for="" class="contact__label"></label>
+                            <input type="text" class="contact__input" placeholder="Project" required>
+                        </div>
+                        <div class="form__content">
+                            <label for="" class="contact__label"></label>
+                            <textarea name="" id="" cols="30" rows="10" class="contact__input contact__textarea" placeholder="Message" required></textarea>
+                        </div>
+                            <button type="submit" class="form__buttons">Submit</button>
+                            <button type="reset" class="form__buttons reset-btn">Reset</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <script src="https://kit.fontawesome.com/bcb707f06c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

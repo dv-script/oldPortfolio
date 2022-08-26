@@ -9,11 +9,15 @@
     height: 100vh;
 }
 
-.about__content{
+.content{
     margin: auto;
 }
 
-.about__title{
+.top__heading, .top__subheading{
+    text-align: center;
+}
+
+.top__heading{
     color: var(--color-black);
     font-size: 48px;
     font-weight: 700;
@@ -21,7 +25,7 @@
     text-align: center;
 }
 
-.about__subheading{
+.top__subheading{
     color: var(--text-color);
     font-size: 24px;
     font-weight: 500;

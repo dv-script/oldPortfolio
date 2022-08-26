@@ -3,6 +3,8 @@
 @import url(css/about.css);
 @import url(css/skills.css);
 @import url(css/projects.css);
+@import url(css/swiper-bundle.min.css);
+@import url(css/contact.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap');
 
@@ -23,6 +25,10 @@
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 @keyframes moving{
     to{
         top: 7px;
@@ -30,10 +36,6 @@
     from{
         top: 14px;
     }
-}
-
-body{
-    overflow-x: hidden;
 }
 
 .fa-angle-up{
@@ -61,10 +63,15 @@ body{
     background-color: var(--principal-color);
     border-radius: 50%;
     border: none;
-    transition: 1s;
 }
 
 .visible{
     display: block;
     opacity: 100%;
+    transition: 1s;
+}
+
+.invisible{
+    opacity: 0;
+    transition: 1s;
 }
