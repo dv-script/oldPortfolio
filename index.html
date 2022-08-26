@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="reset.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+ 
+    <script defer src="js/main.js"></script>
+
+    <title>Portfolio Davi Hasson Castro</title>
+</head>
+
+<body>
+    <a href="#home"><button class="to-top__button visible"><i class="fa-solid fa-angle-up"></i></button></a>
+    <header class="first__header">
+            <nav class="nav__menu">
+                <div>
+                    <a href="#home"><button class="nav__logo">Davi</button></a>
+                </div>
+            </nav>
+            <nav class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about-me"><button class="nav__button" id="button__about">About</button></a></li>
+                    <li class="nav__item"><a href="#skills"><button class="nav__button" id="button__skills">Skills</button></a></li>
+                    <li class="nav__item"><a href="#projects"><button class="nav__button" id="button__projects">Projects</button></a></li>
+                    <li class="nav__item"><a href="#contact"><button class="nav__button" id="button__contact">Contact</button></a></li>
+                    <li class="nav__item"><button class="nav__button" id="button__darkmode">#</button></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="first__main" id="home">
+        <section class="profile">
+                <div class="social-media">
+                    <a href="https://github.com/dv-script" target="_blank" rel="exteral" class="social-media__link"><img src="images/github.png" class="social-media__image" alt="Logo GitHub"></a>
+                    <a href="https://linkedin.com/in/davi-hasson-castro-3968751ab/" target="_blank" rel="exteral" class="social-media__link"><img src="images/linkedin.png" class="social-media__image" alt="Logo LinkedIn"></a>
+                </div>
+                <div class="profile__info">
+                    <h1 class="info__title">Hi, I am Davi</h1>
+                    <h2 class="info__subheading">Frontend developer</h2>
+                    <p class="info__text">High level experience in web design and development knowledge, producing quality work.</p>
+                    <div class="info__buttons">
+                        <button class="info__contact">Contact Me<img src="images/send.png" class="info__image"></button>
+                    </div>
+                    <a href="#about-me"><button class="scroll-down__button"><img src="images/computer-mouse.png" class="scroll-down__image" id="scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
+                </div>
+                <div class="profile__image">
+                    <img src="images/profile.png" class="container__image-firstprofile" alt="Davi's picture">
+                </div>
+        </section>
+    
+        <section class="about" id="about-me">
+            <div class="about__content">
+                <div class="about__top">
+                    <h1 class="about__title">About Me</h1>
+                    <h2 class="about__subheading">My introduction</h2>
+                </div>
+                <div class="container">
+                    <div class="container__secundaryimage">
+                        <img src="images/profile2.png" class="container__image-secundaryprofile" alt="Davi's picture">
+                    </div>
+                    <div class="container__info">
+                        <div class="info__text">
+                            <p>Web developer, with extensive knowledge and years of experience, working in web technologies, delivering quality work.</p>
+                        </div>
+                        <div class="info__stats">
+                            <ul class="stats__list">
+                                <li id="stats__years">
+                                    <p class="stats__number">01</p>
+                                    <p class="stats__text">Years<br>experience</p>
+                                </li>
+                                <li id="stats__projects">
+                                    <p class="stats__number">20+</p>
+                                    <p class="stats__text">Completed<br>projects</p>
+                                </li>
+                                <li id="stats__companies">
+                                    <p class="stats__number">05+</p>
+                                    <p class="stats__text">Companies<br>worked</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container__buttons">
+                        <button class="container__cv">Download Curriculum<img src="images/downloadCv.png" class="cv__image"></button>
+                        <a href="#skills"><button class="scroll__down__button"><img src="images/computer-mouse.png" class="scroll-down__image" id="scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skills__content">
+                <div class="skills__top">
+                    <h1 class="skills__heading">Skills</h1>
+                    <h2 class="skills__subheading">My technical level</h2>
+                </div>
+                <div class="skills__items">
+                    <div class="items__frontend">
+                        <div class="frontend__content">
+                            <div class="frontend__image">
+                                <img class="items-image" src="images/braces.png" alt="Frontend image">
+                            </div>
+                            <div class="items-content">
+                                <h3 class="heading-content">Frontend developer</h3>
+                                <p class="text-content">Less than 1 year</p>
+                            </div>
+                            <div class="items-button">
+                                <button class="button-show">
+                                    <img class="button-image" src="images/downArrow.png" alt="Show the skills">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frontend__details">
+                            <ul class="frontend-list">
+                                <li class="details__topics" id="frontend__html">
+                                    <div class="details__text">
+                                        <p class="details__heading">HTML5</p>
+                                        <p class="details__percentual">93%</p>
+                                    </div>
+                                    <progress class="details__bar" value="93" max="100"></progress>
+                                </li>
+                                <li class="details__topics" id="frontend__css">
+                                    <div class="details__text">
+                                        <p class="details__heading">CSS</p>
+                                        <p class="details__percentual">87%</p>
+                                    </div>
+                                    <progress class="details__bar" value="87" max="100"></progress>
+                                </li>
+                                <li class="details__topics" id="frontend__javascript">
+                                    <div class="details__text">
+                                        <p class="details__heading">JavaScript</p>
+                                        <p class="details__percentual">39%</p>
+                                    </div>
+                                    <progress class="details__bar" value="39" max="100"></progress>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="items__backend">
+                        <div class="backend__content">
+                            <div class="backend__image">
+                                <img class="items-image" src="images/backEnd.png" alt="Frontend image">
+                            </div>
+                            <div class="items-content">
+                                <h3 class="heading-content">Backend developer</h3>
+                                <p class="text-content">More than 2 years</p>
+                            </div>
+                            <div class="items-button">
+                                <button class="button-show">
+                                    <img class="button-image" src="images/downArrow.png" alt="Show the skills">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="backend__details">
+                            <ul class="backend-list">
+                                <li class="details__topics" id="backend-python">
+                                    <div class="details__text">
+                                        <p class="details__heading">Python</p>
+                                        <p class="details__percentual">27%</p>
+                                    </div>
+                                    <progress class="details__bar" value="27" max="100"></progress>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects__content">
+                <div class="projects__top">
+                    <h1 class="projects__heading">Projects</h1>
+                    <h2 class="projects__subheading">My personal projects</h2>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/secretNumber.png" alt="Picture of the project">
+                            <div>
+                                <h1>Secret Number</h1>
+                                <p>Project made in Alura's course, initially using HTML, CSS and JavaScript. The project working with SpeechRecognition API.</p>
+                                <a href="" target="_blank" rel="external">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/aluraBooks.png" alt="Picture of the project">
+                            <div>
+                                <h1>Alura Books</h1>
+                                <p>Responsive website made in Alura's course, initially using only HTML and CSS in its structure. The project is basically a front page of a book's catalog website.</p>
+                                <a href="" target="_blank" rel="external">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pokedex.png" alt="Picture of the project">
+                            <div>
+                                <h1>Pokedex</h1>
+                                <p>Basic project that I write in HTML, CSS and JavaScript in its structure that implements the PokeAPI</p>
+                                <a href="" target="_blank" rel="external">Demo <i class="fa-solid fa-arrow-right"></i></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/bcb707f06c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>

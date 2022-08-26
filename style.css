@@ -1,0 +1,70 @@
+@import url(css/header.css);
+@import url(css/profile.css);
+@import url(css/about.css);
+@import url(css/skills.css);
+@import url(css/projects.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap');
+
+:root{
+    --principal-color: #846ead;
+    --secundary-color: #5E4E7A;
+    --tertiary-color: #BFA0FA;
+    --quaternary-color: #8F55FA;
+
+    --color-black: black;
+    --color-white: white;
+    --swiper-theme-color: #846ead;
+
+    --text-color-light: #a8a8a8; 
+    --text-color: #5a5a5a;
+    
+    --font-default: "Montserrat";
+
+}
+
+@keyframes moving{
+    to{
+        top: 7px;
+    }
+    from{
+        top: 14px;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.fa-angle-up{
+    top: 10px;
+    font-size: 28px;
+    position: absolute;
+    left: 15.25px;
+    color: var(--color-white);
+    animation-name: moving;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: 0.21, -0.69, 1, 1;
+}
+
+.to-top__button{
+    cursor: pointer;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.808);
+    position: fixed;;
+    right: 65px;
+    bottom: 60px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: var(--principal-color);
+    border-radius: 50%;
+    border: none;
+    transition: 1s;
+}
+
+.visible{
+    display: block;
+    opacity: 100%;
+}

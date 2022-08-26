@@ -1,0 +1,126 @@
+*{
+    font-size: 18px;
+    font-family: var(--font-default);
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.social-media__link{
+    display: flex;
+    margin: 1em 0;
+}
+
+.social-media__image{
+    width: 35px;
+    transition: 1s;
+}
+
+.social-media__link:hover .social-media__image{
+    transform: rotateY(360deg);
+}
+
+.profile__info{
+    margin: 2em 2em 0 2em;
+    position: relative;
+}
+
+.info__buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title{
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.info__subheading{
+    color: var(--color-black);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.info__text{
+    max-width: 20em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.info__contact{
+    width: 20em;
+    cursor: pointer;
+    padding: 1em;
+    color: white;
+    background-color: var(--principal-color);
+    border: none;
+    border-radius: 20px;
+    box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.377);
+    transition: 500ms;
+}
+
+.info__contact:hover{
+    font-size: 120%;
+}
+
+.info__contact:active{
+    background-color: var(--tertiary-color);
+}
+
+.info__image{
+    padding: 0 0 0 15px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.scroll-down__button{
+    width: 10.9em;
+    justify-items: left;
+    height: 1.5em;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    vertical-align: bottom;
+    font-weight: 700;
+    position: absolute;
+    left: 0px;
+    bottom: -120px;
+}
+
+.scroll-down__image{
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.scroll-down-seta{
+    width: 15px;
+    margin-left: 0.5em;
+}
+
+#scroll-down-mouse{
+    width: 40px;
+    margin-right: 0.5em;
+}
+
+.profile__image{
+    align-items: center;
+    justify-content: center;
+}
+
+.container__image-firstprofile{
+    padding-left: 4em;
+    width: 30em;
+}
