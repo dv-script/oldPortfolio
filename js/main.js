@@ -44,3 +44,20 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 })
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+const mobileButton = document.querySelector(".mobile__button");
+
+function toggleMenu(event) {
+
+  if (event.type === "touchstart"){
+    event.preventDefault();
+  }
+
+  const nav = document.querySelector(".nav__menu");
+  nav.classList.toggle("active");
+}
+
+mobileButton.addEventListener("click", toggleMenu);
+mobileButton.addEventListener("touchstart", toggleMenu);

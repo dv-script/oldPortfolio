@@ -7,7 +7,11 @@
 }
 
 .header__content{
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em;
+    height: 10vh;
+    width: 100vw;
     align-items: center;
     background-color: white;
     border-bottom: 3px solid rgba(216, 216, 216, 0.205);
@@ -15,10 +19,8 @@
     z-index: 2;
 }
 
-.nav__menu{
-    display: flex;
-    justify-content: space-around;
-    height: 10vh;
+.mobile__button{
+    display: none;
 }
 
 .nav__list{
@@ -30,11 +32,6 @@
     padding: 0 0.5em;
 }
 
-.nav__head{
-    display: flex;
-    align-items: center;
-}
-
 .head__button{
     font-size: 24px;
     transition: 500ms;
@@ -44,11 +41,9 @@
 }
 
 .nav__button{
-    padding: 0 0.5em;
     transition: 250ms;
     background-color: transparent;
     border: none;
-    vertical-align: center;
     cursor: pointer;
 }
 
@@ -69,10 +64,80 @@
     color: var(--tertiary-color);
 }
 
-@media screen and (max-width:500px) {
-    
-    .nav__menu{
-        
+@media screen and (max-width:550px) {
+
+    .header__content{
+        justify-content: space-between;
+        background-color: #eeeeee;
+        border-bottom: 2px solid #a1a1a162;
     }
 
+    .nav__list{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 0;
+        top: 88px;
+        right: 0;
+        background-color: #eeeeee;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .nav__item{
+        display: flex;
+        padding: 1em 0;    
+        justify-content: flex-end;    
+    }
+
+    .nav__button{
+        padding: 0 2em;
+    }
+
+    .nav__menu.active .nav__list{
+        visibility: visible;
+        height: calc(36vh - 2em);
+        overflow-y: auto;
+    }
+
+    .mobile__button{
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+    }
+
+    .nav__menu.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    .nav__menu.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    .nav__menu.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
