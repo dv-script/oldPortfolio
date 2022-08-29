@@ -6,15 +6,9 @@
     text-decoration: none;
 }
 
-.first__header{
-    height: 10vh;
-    width: 100vw;
-}
-
 .header__content{
-    align-items: center;
     width: 100%;
-    padding: 1em 0;
+    align-items: center;
     background-color: white;
     border-bottom: 3px solid rgba(216, 216, 216, 0.205);
     position: fixed;
@@ -23,10 +17,20 @@
 
 .nav__menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 10vh;
 }
 
 .nav__list{
+    display: flex;
+    align-items: center;
+}
+
+.nav__item{
+    padding: 0 0.5em;
+}
+
+.nav__head{
     display: flex;
     align-items: center;
 }
@@ -48,7 +52,7 @@
     cursor: pointer;
 }
 
-.nav__button:hover, .nav__logo:hover{
+.nav__button:hover, .head__button:hover{
     color: var(--principal-color);
     text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.281);
 }

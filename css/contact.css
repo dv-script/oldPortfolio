@@ -63,6 +63,12 @@
 .contact__textarea{
     min-width: 100%;
     max-width: 100%;
+    height: 100px;
+}
+
+.form__btn{
+    display: flex;
+    justify-content: space-between;
 }
 
 .form__buttons{
@@ -75,6 +81,11 @@
     border: none;
     border-radius: 20px;
     box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.377);
+    transition: 200ms;
+}
+
+.form__buttons:hover{
+    font-size: 110%;
 }
 
 .form__buttons:active{

@@ -26,7 +26,7 @@
                         <li class="nav__item"><a href="#skills"><button class="nav__button" id="button__skills">Skills</button></a></li>
                         <li class="nav__item"><a href="#projects"><button class="nav__button" id="button__projects">Projects</button></a></li>
                         <li class="nav__item"><a href="#contact"><button class="nav__button" id="button__contact">Contact</button></a></li>
-                        <li class="nav__item"><button class="nav__button" id="button__darkmode">#</button></li>
+                        <li class="nav__item"><button class="nav__button" id="button__darkmode"><i class="fas fa-moon"></i></button></li>
                     </ul>
                 </nav>
             </div>
@@ -43,7 +43,7 @@
                     <h2 class="info__subheading">Frontend developer</h2>
                     <p class="info__text">High level experience in web design and development knowledge, producing quality work.</p>
                     <div class="info__buttons">
-                        <button class="info__contact">Contact Me<img src="images/send.png" class="info__image"></button>
+                        <a href="mailto:davihasson@gmail.com"><button class="info__contact">Contact Me<img src="images/send.png" class="info__image"></button></a>
                     </div>
                     <a href="#about-me"><button class="scroll-down__button"><img src="images/computer-mouse.png" class="scroll-down__image scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
                 </div>
@@ -69,22 +69,22 @@
                         <div class="info__stats">
                             <ul class="stats__list">
                                 <li id="stats__years">
-                                    <p class="stats__number">01</p>
+                                    <p class="stats__number" data-value="1"></p>
                                     <p class="stats__text">Years<br>experience</p>
                                 </li>
                                 <li id="stats__projects">
-                                    <p class="stats__number">20+</p>
+                                    <p class="stats__number" data-value="13"></p>
                                     <p class="stats__text">Completed<br>projects</p>
                                 </li>
                                 <li id="stats__companies">
-                                    <p class="stats__number">05+</p>
+                                    <p class="stats__number" data-value="1"></p>
                                     <p class="stats__text">Companies<br>worked</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="container__buttons">
-                        <button class="container__cv">Download Curriculum<img src="images/downloadCv.png" class="cv__image"></button>
+                        <a href="documents/curriculum.pdf" download><button class="container__cv">Download Curriculum<img src="images/downloadCv.png" class="cv__image"></button></a>
                         <a href="#skills"><button class="scroll__down__button"><img src="images/computer-mouse.png" class="scroll-down__image scroll-down-mouse">Scroll down<img src="images/seta.png" class="scroll-down__image scroll-down-seta"></button></a>
                     </div>
                 </div>
@@ -259,7 +259,7 @@
                             <i class="fa-solid fa-location-dot contact-icon"></i>
                             <div class="contact__info-item-description">
                                 <h2 class="info__heading">Location</h2>
-                                <p class="info__description">+55 (21) 96782-2001</p>
+                                <p class="info__description">Rio de Janeiro, RJ</p>
                             </div>
                         </div>
                     </div>
@@ -280,8 +280,10 @@
                             <label for="" class="contact__label"></label>
                             <textarea name="" id="" cols="30" rows="10" class="contact__input contact__textarea" placeholder="Message" required></textarea>
                         </div>
-                            <button type="submit" class="form__buttons">Submit</button>
-                            <button type="reset" class="form__buttons reset-btn">Reset</button>
+                            <div class="form__btn">
+                                <button type="submit" class="form__buttons">Submit</button>
+                                <button type="reset" class="form__buttons reset-btn">Reset</button>
+                            </div>
                     </form>
                 </div>
             </div>

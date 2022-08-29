@@ -11,7 +11,7 @@ const swiper = new Swiper('.projects__container', {
   },
 });
 
-// ========================================================================
+/////////////////////////////////////////////////////////////////////////////////////
 
 const toTop = document.querySelector(".to-top__button");
 
@@ -19,8 +19,28 @@ window.addEventListener("scroll", function (el) {
   if (window.scrollY > 946) {
     toTop.classList.add("visible");
     toTop.classList.remove("invisible")
+    console.log(el);
   } else {
     toTop.classList.remove("visible");
-    toTop.classList.add("invisible");
   }
 });
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+let valueDisplays = document.querySelectorAll(".stats__number");
+let interval = 700;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  valueDisplay.textContent = startValue;
+  let endValue = parseInt(valueDisplay.getAttribute("data-value"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function(){
+    startValue += 1
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+      return
+    }
+  }, duration);
+})
