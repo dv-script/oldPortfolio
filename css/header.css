@@ -9,8 +9,7 @@
 .header__content{
     display: flex;
     justify-content: space-around;
-    padding: 0 1em;
-    height: 10vh;
+    height: 5.5em;
     width: 100vw;
     align-items: center;
     background-color: white;
@@ -29,7 +28,7 @@
 }
 
 .nav__item{
-    padding: 0 0.5em;
+    padding: 0 0.3em;
 }
 
 .head__button{
@@ -93,12 +92,12 @@
     }
 
     .nav__button{
-        padding: 0 2em;
+        padding: 0 1em;
     }
 
     .nav__menu.active .nav__list{
         visibility: visible;
-        height: calc(36vh - 2em);
+        height: calc(40vh - 5.5em);
         overflow-y: auto;
     }
 
