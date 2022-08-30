@@ -50,12 +50,11 @@
 }
 
 .contact__input {
-    padding: 1.5em 0;
+    padding: 1.5em 1em;
     border: none;
     border-radius: 20px;
     box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.247);
     outline: 0;
-    text-indent: 30px;
 }
 
 .contact__textarea {
@@ -66,6 +65,7 @@
 
 .form__btn {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 

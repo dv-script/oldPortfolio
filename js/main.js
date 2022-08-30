@@ -18,7 +18,7 @@ const toTop = document.querySelector(".to-top__button");
 window.addEventListener("scroll", function (el) {
   if (window.scrollY > 946) {
     toTop.classList.add("visible");
-    toTop.classList.remove("invisible")
+    toTop.classList.remove("invisible");
   } else {
     toTop.classList.remove("visible");
   }
@@ -26,23 +26,35 @@ window.addEventListener("scroll", function (el) {
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-let valueDisplays = document.querySelectorAll(".stats__number");
-let interval = 700;
+const valueDisplays = document.querySelectorAll(".stats__number");
+const interval = 700;
 
-valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
-  valueDisplay.textContent = startValue;
-  let endValue = parseInt(valueDisplay.getAttribute("data-value"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function(){
-    startValue += 1
+const aboutMe = document.querySelector(".about");
+
+// window.addEventListener("scroll", function (el) {
+//   if (window.scrollY == aboutMe.scrollY) {
+//     counterUp();
+//   };
+// });
+
+counterUp();
+
+function counterUp() {
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
     valueDisplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-      return
-    }
-  }, duration);
-})
+    let endValue = parseInt(valueDisplay.getAttribute("data-value"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function(){
+      startValue += 1
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+        clearInterval(counter);
+        return
+      }
+    }, duration);
+  });
+}
 
 /////////////////////////////////////////////////////////////////////////////////////
 
