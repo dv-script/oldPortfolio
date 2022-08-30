@@ -1,0 +1,11 @@
+.body-darkmode{
+    background-color: var(--color-darkmode);
+}
+
+.header-darkmode{
+    background-color: var(--color-header-darkmode);
+}
+
+.text-darkmode{
+    color: white;
+}

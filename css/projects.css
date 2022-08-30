@@ -1,8 +1,9 @@
 .projects{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .content{
@@ -10,9 +11,9 @@
 }
 
 .projects__container{
-    max-width: 1000px;
+    width: 100%;
+    max-width: 990px;
     margin-top: 3em;
-
 }
 
 .projects__content{
@@ -20,7 +21,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .projects__image{

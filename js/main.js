@@ -19,7 +19,6 @@ window.addEventListener("scroll", function (el) {
   if (window.scrollY > 946) {
     toTop.classList.add("visible");
     toTop.classList.remove("invisible")
-    console.log(el);
   } else {
     toTop.classList.remove("visible");
   }
@@ -61,3 +60,49 @@ function toggleMenu(event) {
 
 mobileButton.addEventListener("click", toggleMenu);
 mobileButton.addEventListener("touchstart", toggleMenu);
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+const showButton = document.querySelectorAll(".items-button");
+showButton.forEach(ev => {
+  ev.addEventListener("click", () => {
+    ev.classList.toggle("open");
+    let backendList = document.querySelector(".backend__details");
+    let frontendList = document.querySelector(".frontend__details");
+    console.log()
+    if (ev.attributes["data-set"].textContent === "frontEnd") {
+      frontendList.classList.toggle("visible-skills");
+    }
+    if (ev.attributes["data-set"].textContent === "backEnd") {
+      backendList.classList.toggle("visible-skills");
+    }
+  });
+});
+  
+/////////////////////////////////////////////////////////////////////////////////////
+  
+const darkTheme = document.querySelector("#button__darkmode");
+
+
+const body = document.querySelector("body");
+const header = document.querySelector(".header__content");
+const text = document.querySelectorAll(".text");
+const button = document.querySelectorAll(".btn");
+
+darkTheme.addEventListener("click", () => {
+
+  body.classList.toggle("body-darkmode")
+  header.classList.toggle("header-darkmode")
+
+
+  text.forEach(il => {
+    console.log(il);
+    il.classList.toggle("text-darkmode");
+  });
+
+  button.forEach(il => {
+    console.log(il);
+    il.classList.toggle("button-darkMode");
+  });
+  
+})

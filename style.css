@@ -5,50 +5,65 @@
 @import url(css/projects.css);
 @import url(css/swiper-bundle.min.css);
 @import url(css/contact.css);
+@import url(css/darkMode.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap');
 
-:root{
+:root {
     --principal-color: #846ead;
     --secundary-color: #5E4E7A;
     --tertiary-color: #BFA0FA;
     --quaternary-color: #8F55FA;
 
+    --color-header-darkmode: #20263b;
+    --color-darkmode: #0a1020;
+
     --color-black: black;
     --color-white: white;
     --swiper-theme-color: #846ead;
 
-    --text-color-light: #a8a8a8; 
+    --text-color-light: #a8a8a8;
     --text-color: #5a5a5a;
-    
+
     --font-default: "Montserrat";
 
 }
 
-body{
-    overflow-x: hidden;
+.main {
+    background-color: red; 
 }
 
-@keyframes moving{
-    to{
+@keyframes moving {
+    to {
         top: 7px;
     }
-    from{
+
+    from {
         top: 14px;
     }
 }
 
-@keyframes fade{
-    to{
+@keyframes movingMobile {
+    to {
+        top: 0;
+    }
+
+    from {
+        top: 6px;
+    }
+}
+
+@keyframes fade {
+    to {
         opacity: 1;
     }
-    from{
+
+    from {
         opacity: 0;
     }
 }
 
-
-.fa-angle-up{
+.fa-angle-up {
     top: 10px;
     font-size: 28px;
     position: absolute;
@@ -61,10 +76,10 @@ body{
     animation-timing-function: 0.21, -0.69, 1, 1;
 }
 
-.to-top__button{
+.to-top__button {
     cursor: pointer;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.808);
-    position: fixed;;
+    position: fixed;
     right: 65px;
     bottom: 60px;
     display: none;
@@ -73,11 +88,36 @@ body{
     background-color: var(--principal-color);
     border-radius: 50%;
     border: none;
+    z-index: 1000;
 }
 
-.visible{
+.visible {
     display: block;
     animation-name: fade;
     animation-duration: 1500ms;
 }
 
+.visible-skills{
+    max-height: 219px;
+    height: 100%;
+    visibility: visible;
+    display: flex;
+}
+
+.open {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:550px) {
+    .to-top__button {
+        width: 32px;
+        height: 32px;
+        right: 5px;
+    }
+
+    .fa-angle-up{
+        font-size: 25px;
+        left: 7px;
+        animation-name: movingMobile;
+    }
+}
