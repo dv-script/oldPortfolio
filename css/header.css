@@ -71,6 +71,10 @@
         border-bottom: 2px solid #a1a1a162;
     }
 
+    .header__content{
+        position: relative;
+    }
+
     .nav__list{
         display: block;
         position: absolute;

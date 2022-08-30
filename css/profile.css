@@ -195,4 +195,8 @@
     .scroll-down__button{
         top: 17em;
     }
+
+    #scroll-profile{
+        width: 100%;
+    }
 }
