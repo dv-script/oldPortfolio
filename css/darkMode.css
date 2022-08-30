@@ -4,6 +4,10 @@
 
 .header-darkmode{
     background-color: var(--color-header-darkmode);
+
+}
+.nav-list-darkmode{
+    background-color: var(--color-header-darkmode);
 }
 
 .text-darkmode{

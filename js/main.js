@@ -83,26 +83,27 @@ showButton.forEach(ev => {
   
 const darkTheme = document.querySelector("#button__darkmode");
 
-
 const body = document.querySelector("body");
 const header = document.querySelector(".header__content");
 const text = document.querySelectorAll(".text");
-const button = document.querySelectorAll(".btn");
+const navList = document.querySelectorAll(".nav__list");
+const hamburger = document.querySelector(".hamburger");
 
 darkTheme.addEventListener("click", () => {
 
-  body.classList.toggle("body-darkmode")
-  header.classList.toggle("header-darkmode")
+  body.classList.toggle("body-darkmode");
+  header.classList.toggle("header-darkmode");
+  header.classList.toggle("header__content-darkmode");
+
+  hamburger.classList.toggle("hamburger-darkmode");
+  
+  navList.forEach(il => {
+    il.classList.toggle("nav-list-darkmode");
+  });
 
 
   text.forEach(il => {
-    console.log(il);
     il.classList.toggle("text-darkmode");
   });
 
-  button.forEach(il => {
-    console.log(il);
-    il.classList.toggle("button-darkMode");
-  });
-  
-})
+});
