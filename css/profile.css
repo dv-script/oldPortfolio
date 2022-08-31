@@ -84,21 +84,6 @@
     vertical-align: middle;
 }
 
-.scroll-down__button{
-    width: 10.9em;
-    justify-items: left;
-    height: 1.5em;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--text-color);
-    border: none;
-    vertical-align: bottom;
-    font-weight: 700;
-    position: absolute;
-    left: 0px;
-    bottom: -120px;
-}
-
 .scroll-down__image{
     align-items: center;
     justify-content: center;

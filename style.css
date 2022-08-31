@@ -110,14 +110,14 @@
 
 @media screen and (max-width:550px) {
     .to-top__button {
-        width: 32px;
-        height: 32px;
+        width: 35px;
+        height: 35px;
         right: 5px;
     }
 
     .fa-angle-up{
         font-size: 25px;
-        left: 7px;
+        left: 8px;
         animation-name: movingMobile;
     }
 }
