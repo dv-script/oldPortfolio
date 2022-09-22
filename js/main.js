@@ -26,20 +26,16 @@ window.addEventListener("scroll", function (el) {
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-const valueDisplays = document.querySelectorAll(".stats__number");
-const interval = 700;
-
-const aboutMe = document.querySelector(".about");
-
-// window.addEventListener("scroll", function (el) {
-//   if (window.scrollY == aboutMe.scrollY) {
-//     counterUp();
-//   };
-// });
-
+const scrollDownProfile = document.querySelector("#scroll-profile");
 counterUp();
 
+scrollDownProfile.addEventListener("click", () => {
+  counterUp();
+});
+
 function counterUp() {
+  let valueDisplays = document.querySelectorAll(".stats__number");
+  let interval = 700;
   valueDisplays.forEach((valueDisplay) => {
     let startValue = 0;
     valueDisplay.textContent = startValue;
